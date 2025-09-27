@@ -9,6 +9,7 @@
         "oxlint": "^1.18.0",
         "oxlint-tsgolint": "^0.2.0"
     },
+    "license": "(MIT OR Apache-2.0)",
     "scripts": {
         "lint": "oxlint --type-aware",
         "format": "biome format --write"
