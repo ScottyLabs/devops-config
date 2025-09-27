@@ -1,18 +1,19 @@
 {
-  "name": "scottylabs-template",
-  "module": "index.ts",
-  "type": "module",
-  "private": true,
-  "devDependencies": {
-    "@biomejs/biome": "2.2.4",
-    "@types/bun": "latest",
-    "oxlint": "^1.18.0",
-    "oxlint-tsgolint": "^0.2.0"
-  },
-  "scripts": {
-    "lint": "oxlint --type-aware"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  }
+    "name": "scottylabs-template",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "devDependencies": {
+        "@biomejs/biome": "2.2.4",
+        "@types/bun": "latest",
+        "oxlint": "^1.18.0",
+        "oxlint-tsgolint": "^0.2.0"
+    },
+    "scripts": {
+        "lint": "oxlint --type-aware",
+        "format": "biome format --write"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    }
 }
