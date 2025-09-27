@@ -13,6 +13,21 @@
         "lint": "oxlint --type-aware",
         "format": "biome format --write"
     },
+    "commitlint": {
+        "extends": [
+            "@commitlint/config-conventional"
+        ]
+    },
+    "lint-staged": {
+        "**/*.{js,ts,svelte}": [
+            "bun lint",
+            "bun format"
+        ],
+        "**/*.rs": [
+            "cargo clippy --workspace --all-targets -- -D warnings",
+            "cargo fmt --all -- --check"
+        ]
+    },
     "peerDependencies": {
         "typescript": "^5"
     }
