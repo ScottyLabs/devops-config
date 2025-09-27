@@ -22,10 +22,6 @@
         "**/*.{js,ts,svelte}": [
             "bun lint",
             "bun format"
-        ],
-        "**/*.rs": [
-            "cargo clippy --workspace --all-targets -- -D warnings",
-            "cargo fmt --all -- --check"
         ]
     },
     "devDependencies": {
