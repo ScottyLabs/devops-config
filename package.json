@@ -9,6 +9,7 @@
         "oxlint": "^1.18.0",
         "oxlint-tsgolint": "^0.2.0"
     },
+    "packageManager": "bun@1.2.22",
     "scripts": {
         "lint": "oxlint --type-aware",
         "format": "biome format --write"
