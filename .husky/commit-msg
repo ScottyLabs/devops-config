@@ -1,0 +1,1 @@
+cd .. && bun commitlint --edit $1
