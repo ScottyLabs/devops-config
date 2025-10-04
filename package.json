@@ -5,7 +5,11 @@
     "private": true,
     "devDependencies": {
         "@biomejs/biome": "2.2.4",
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
         "@types/bun": "latest",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.6",
         "oxlint": "^1.18.0",
         "oxlint-tsgolint": "^0.2.0"
     },
@@ -24,12 +28,6 @@
             "bun lint",
             "bun format"
         ]
-    },
-    "devDependencies": {
-        "@commitlint/cli": "^19.8.1",
-        "@commitlint/config-conventional": "^19.8.1",
-        "husky": "^9.1.7",
-        "lint-staged": "^16.1.6"
     },
     "peerDependencies": {
         "typescript": "^5"
